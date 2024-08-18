@@ -11,7 +11,7 @@ const EditUser = ({ user, onSave, onCancel }) => {
   };
 
   return (
-    <div className="modal" style={{ display: 'block' }}>
+    <div className="modal modal-block">
       <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-header">

@@ -89,7 +89,7 @@ const UserList = () => {
 
       {/* Delete Confirmation Modal */}
       {showDeleteModal && (
-        <div className="modal" id="myModal" style={{ display: 'block' }}>
+        <div className="modal modal-block" id="myModal">
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">

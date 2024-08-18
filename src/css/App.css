@@ -49,5 +49,6 @@ label{ float: left;}
 }
 
 
-
+.linkdiv{ cursor: pointer;}
+.modal-block{ display: block !important;}
 

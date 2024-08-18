@@ -69,23 +69,53 @@ const Register = () => {
         <form onSubmit={handleSubmit} className="col-6 mx-auto">
           <div className="form-group mb-3 mt-3">
             <label htmlFor="fullname" className="form-label">Full Name:</label>
-            <input type="text" className="form-control" id="fullname" placeholder="Enter Name" value={formValues.username} onChange={handleChange}
+            <input type="text"
+              className="form-control"
+              id="fullname"
+              placeholder="Enter Name"
+              name="username"
+              value={formValues.username}
+              onChange={handleChange}
             />
             {error.username && <p className='errors'>{error.username}</p>}
           </div>
           <div className="form-group mb-3 mt-3">
             <label htmlFor="email" className="form-label">Email:</label>
-            <input type="text" className="form-control" id="email" placeholder="Enter Email" name="email" value={formValues.email} onChange={handleChange} />
+            <input
+              type="text"
+              className="form-control"
+              id="email"
+              placeholder="Enter Email"
+              name="email"
+              value={formValues.email}
+              onChange={handleChange}
+            />
             {error.email && <p className='errors'>{error.email}</p>}
           </div>
           <div className="form-group mb-3">
             <label htmlFor="password" className="form-label">Password:</label>
-            <input type="password" className="form-control" id="password" placeholder="Enter Password" name="password" value={formValues.password} onChange={handleChange} />
+            <input
+              type="password"
+              className="form-control"
+              id="password"
+              placeholder="Enter Password"
+              name="password"
+              value={formValues.password}
+              onChange={handleChange}
+            />
             {error.password && <p className='errors'>{error.password}</p>}
           </div>
           <div className="form-group mb-3">
             <label htmlFor="confirmPassword" className="form-label">Confirm Password:</label>
-            <input type="password" className="form-control" id="confirmPassword" placeholder="Enter Confirm Password" name="confirmpassword" value={formValues.confirmpassword} onChange={handleChange} />
+            <input
+              type="password"
+              className="form-control"
+              id="confirmPassword"
+              placeholder="Enter Confirm Password"
+              name="confirmpassword"
+              value={formValues.confirmpassword}
+              onChange={handleChange}
+            />
             {error.confirmpassword && <p className='errors'>{error.confirmpassword}</p>}
           </div>
           <button type="submit" className="btn btn-primary">Register</button>
