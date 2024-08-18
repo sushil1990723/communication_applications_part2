@@ -32,7 +32,7 @@ export default function Nav() {
                                     <Link className="nav-link" to="/documentlist">Manage Document</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <span className="nav-link" style={{ cursor: 'pointer' }} onClick={handleLogout}>Logout</span>
+                                    <span className="nav-link linkdiv" onClick={handleLogout}>Logout</span>
                                 </li>
                             </ul>
                         </div>
