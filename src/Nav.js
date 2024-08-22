@@ -9,7 +9,7 @@ export default function Nav() {
         localStorage.removeItem('logdinuser');
         
         // Redirect to the login page
-        navigate('/login');
+        navigate('/');
     };
 
     return (
