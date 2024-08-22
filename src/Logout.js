@@ -6,14 +6,14 @@ const Logout = () => {
 
   useEffect(() => {
     // Clear logged-in user data from localStorage
-    localStorage.removeItem('loggedInUser');
+    localStorage.removeItem('logdinuser');
     
     // Update state to trigger the redirect
     setLoggedOut(true);
   }, []);
 
   if (loggedOut) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/" />;
   }
   
   return (

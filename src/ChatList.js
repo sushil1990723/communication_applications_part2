@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './css/chatlist.css';
-// Optional, if you want to include some styling
+import useAuth from './useAuth';
 
 function GroupChat() {
+  useAuth();
   const [chatHistory, setChatHistory] = useState([]);
   const [input, setInput] = useState('');
   const loggedinuser = JSON.parse(localStorage.getItem('logdinuser'));

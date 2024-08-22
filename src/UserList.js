@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import EditUser from './EditUser'; // Assuming it's in the same directory
+import useAuth from './useAuth';
 
 const UserList = () => {
+  useAuth();
   const [users, setUsers] = useState([]);
   const [userToEdit, setUserToEdit] = useState(null);
   const [showEditModal, setShowEditModal] = useState(false);

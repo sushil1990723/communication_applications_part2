@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, Button, Table } from 'react-bootstrap';
-
+import useAuth from './useAuth';
 
 const DocumentManagement = () => {
+  useAuth();
   const [uploads, setUploads] = useState([]);
   const [fileDescription, setFileDescription] = useState('');
   const [file, setFile] = useState(null);
